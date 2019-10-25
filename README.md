@@ -8,7 +8,7 @@ This repo is contains the material for DevC Bali workshop. Please make sure you 
 - Git
 - Javascript knowledge
 
-## Install
+# Install
 
 First, install [git](http://git-scm.com/downloads) and the LTS version of [node](https://nodejs.org/). Then:
 
