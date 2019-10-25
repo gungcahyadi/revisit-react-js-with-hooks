@@ -1,31 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
+import LivingRoom from './LivingRoom';
+import BedRoom from './BedRoom';
 
 const App = () => {
-  const [ is_dark, setIsDark ] = useState(false);
-
   const containerStyle = { 
     display: "flex", 
     height: "100vh", 
     alignItems: "center",
-    justifyContent: "center", 
     flexDirection: "column",
-    background: is_dark ? "black" : "white",
-    color: is_dark ? "white" : "black",
   };
 
-  const buttonStyle = {
-    padding: "8px",
-    background: "white",
-    borderRadius: "8px",
-  }
-
-  function toogleMode() {
-    setIsDark(!is_dark);
-  }
-
   return (<div style={containerStyle}>
-    <h2>Hello world!</h2>
-    <button style={buttonStyle} onClick={toogleMode}>Turn {is_dark ? "on" : "off"} the light</button>
+    <h2>Home Control</h2>
+
+    <LivingRoom />
+    <BedRoom />
   </div>)
 }
 
